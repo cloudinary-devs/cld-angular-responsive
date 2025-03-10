@@ -13,15 +13,15 @@ export class AppComponent implements OnInit {
   title = 'cld-angular-responsive';
   imagePath!: string;
   baseURL =
-    'https://res.cloudinary.com/tamas-demo/image/upload/breakpoints-article/tuscany.jpg';
+    'https://res.cloudinary.com/demo/image/upload/docs/guitar-man.jpg';
   breakpoint!: string; // Stores the current breakpoint name
 
   cloudinaryTransformations = {
-    [Breakpoints.XSmall]: 'c_fill,w_200,h_150,f_auto,q_auto',
-    [Breakpoints.Small]: 'c_fill,w_400,h_300,f_auto,q_auto',
-    [Breakpoints.Medium]: 'c_fill,w_600,h_450,f_auto,q_auto',
-    [Breakpoints.Large]: 'c_fill,w_800,h_600,f_auto,q_auto',
-    [Breakpoints.XLarge]: 'c_fill,w_1200,h_900,f_auto,q_auto',
+    [Breakpoints.XSmall]: 'ar_1:1,c_thumb,g_face,w_150/f_auto/q_auto',
+    [Breakpoints.Small]: 'ar_1:1,c_thumb,g_face,w_400/f_auto/q_auto',
+    [Breakpoints.Medium]: 'f_auto/q_auto/c_scale,w_600',
+    [Breakpoints.Large]: 'ar_2:1,c_auto,g_auto,w_800/f_auto/q_auto',
+    [Breakpoints.XLarge]: 'ar_2:1,c_auto,g_auto,w_1200/f_auto/q_auto',
   };
 
   constructor(private breakpointObserver: BreakpointObserver) {}
