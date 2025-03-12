@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   cloudinaryTransformations = {
     [Breakpoints.XSmall]: 'ar_1:1,c_thumb,g_face,w_150/f_auto/q_auto',
     [Breakpoints.Small]: 'ar_1:1,c_thumb,g_face,w_400/f_auto/q_auto',
-    [Breakpoints.Medium]: 'f_auto/q_auto/c_scale,w_600',
+    [Breakpoints.Medium]: 'c_scale,w_600/f_auto/q_auto',
     [Breakpoints.Large]: 'ar_2:1,c_auto,g_auto,w_800/f_auto/q_auto',
     [Breakpoints.XLarge]: 'ar_2:1,c_auto,g_auto,w_1200/f_auto/q_auto',
   };
